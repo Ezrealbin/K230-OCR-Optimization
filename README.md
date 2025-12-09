@@ -6,7 +6,7 @@ This project implements a robust OCR system on the **01Studio CanMV K230   studi
 
 ## 🚀 Key Features (核心特性)
 
-* **Visual Stabilization (视觉防抖)**: Implements an interval-based update strategy (updates every 3 frames) to prevent screen flickering and improve FPS.** *视觉稳定（每周一次）**：实现基于间隔的更新策略（每3帧更新一次），以防止屏幕闪烁并提高FPS。
+* **Visual Stabilization (视觉防抖)**: Implements an interval-based update strategy (updates every 3 frames) to prevent screen flickering and improve FPS.** *视觉稳定**：实现基于间隔的更新策略（每3帧更新一次），以防止屏幕闪烁并提高FPS。
 * **CTC Decoding Fix (CTC 解码修复)**: Solves the "Dictionary Not Found" crash caused by the CTC algorithm's `Blank` index (N+1 problem).** *CTC解码修复(CTC)**：解决了CTC算法的“空白”索引（N 1问题）导致的“字典未找到”崩溃。
 * **Confidence Filtering (置信度拦截)**: Converts Log-Softmax outputs to real probabilities using `math.exp` and filters out characters with <50% confidence.** *Confidence Filtering()**：使用“math”将Log-Softmax输出转换为真实概率。Exp’并过滤掉置信度<50%的字符。
 * **Performance Boost**: Filters out small noise (<15px) to save inference time.** *性能提升**：滤除小噪音（<15px），以节省推理时间。
